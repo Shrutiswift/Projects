@@ -18,8 +18,10 @@
       <div class="form-control">
           <label 
                  for="Name" 
-                 id="name-label">
-                 Name</label>
+                 id="name-label"
+                 aria-required="true">
+                 Name
+                 <span class="required" aria-hidden="true">*</span></label>
        
           <!-- Input Type Text -->
           <input 
@@ -35,8 +37,10 @@
            class="form-control">
         <label 
                for="email" 
-               id="email-label">
-               Email
+               id="email-label" 
+               aria-required="true">
+               Email 
+               <span class="required" aria-hidden="true">*</span>
         </label>
        <!-- Input email -->
        <input 
@@ -244,6 +248,9 @@
                       class = "input-textarea"
                       placeholder="Enter your comment here....">
             </textarea>
+            <small id="comments-hint" class="hint">
+                        Optional: Share any additional feedback
+            </small>
         </div>
 
          <div class = "form-group">
@@ -257,6 +264,7 @@
     </form>
 </body>
 
+  
 <style>
     body{
     background-color: #ADD8E6;
